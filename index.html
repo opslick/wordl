@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            wordl
+        </title>
+        <link rel="stylesheet" href="wordl.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wordl">
+            <div class="panel" id="settings">
+                <div><h1>settings</h1></div>
+                <div class="settingsRow">
+                    <label for="maxGuesses">guesses:</label>
+                    <div><input type="number" id="maxGuesses" min="1" max="20"></div>
+                </div>
+                <div class="settingsRow">
+                    <label for="guessTimeLimit">guess time:</label>
+                    <div>
+                        <input type="number" id="guessTimeLimit" min="0">
+                        <span id="guessTimer"></span>
+                        <span>sec</span>
+                    </div>
+                </div>
+                <div class="settingsRow">
+                    <label for="gameTimeLimit">game time:</label>
+                    <div>
+                        <input type="number" id="gameTimeLimit" min="0">
+                        <span id="gameTimer"></span>
+                        <span>sec</span>
+                    </div>
+                </div>
+            </div>
+            <div id="game">
+                <h1>wordl</h1>
+                <div id="guessTable"></div>
+                <div id="alphabet"></div>
+            </div>
+            <div class="panel" id="statistics">
+                <div><h1>statistics</h1></div>
+                <div class="statisticRow">
+                    <label for="gamesPlayed">games played:</label>
+                    <span id="gamesPlayed"></span>
+                </div>
+                <div class="statisticRow">
+                    <label for="gamesWon">games won:</label>
+                    <span id="gamesWon"></span>
+                </div>
+                <div class="statisticRow">
+                    <label for="winRate">win rate:</label>
+                    <span id="winRate"></span>
+                </div>
+                <div class="statisticRow">
+                    <label for="lastGame">last game:</label>
+                    <span id="lastGame"></span>
+                </div>
+            </div>
+        </div>
+        <script src="wordl.js"></script>
+    </body>
+</html>
